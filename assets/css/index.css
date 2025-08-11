@@ -92,6 +92,20 @@ div#allinks {
 }
 
 
+p.message-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p.message-output a {
+    text-decoration: none;
+    color: #0539B6;
+    margin-left: 5px;
+}
+
 /* Teste de celula */
 
 .content {

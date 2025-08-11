@@ -86,8 +86,9 @@ formLink.addEventListener('submit', async function(e){
         const p = document.createElement('p')
 
         await db.urls.add({code: cod, long_url: urlInput.value, clicks: 0}).then((result) => {
-            const urlCurta = `${window.location}/?c=${cod}`
-            p.innerHTML = `URL Encurtada para: <a href="${urlCurta}">${urlCurta}</a>`
+            const urlCurta = `${window.location}?c=${cod}`
+            //p.innerHTML = `URL Encurtada para: <a href="${urlCurta}">${urlCurta}</a>`
+            p.innerText = `URL Encurtada com sucesso!`
             msg.appendChild(p)
         }).catch((err) => {
             console.error(`Ocorreu um erro: ${err}`)
